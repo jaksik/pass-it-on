@@ -22,7 +22,7 @@ export default ({ data }) => {
                 // data-item-image={post.frontmatter.image}
                 data-item-name={product.title}
                 data-item-description="the best snipcart"
-                data-item-url={"https://jaksik-snipcart-demo.netlify.com" + data.markdownRemark.fields.slug}>
+                data-item-url={"https://passiton.netlify.com" + data.markdownRemark.fields.slug}>
                 Buy
             </button>
         </Layout>
