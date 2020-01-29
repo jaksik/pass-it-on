@@ -1,14 +1,7 @@
-/**
- * Layout component that queries for data
- * with Gatsby's useStaticQuery component
- *
- * See: https://www.gatsbyjs.org/docs/use-static-query/
- */
-
 import React from "react"
 import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
-
+import { Link, useStaticQuery, graphql } from "gatsby"
+import { Row, Col } from "reactstrap"
 import Header from "./header"
 import "./layout.css"
 
@@ -29,15 +22,32 @@ const Layout = ({ children }) => {
       <div
         style={{
           margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
+          minHeight: `130vh`
         }}
       >
         <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
+        <footer style={{ marginTop: `130px`, background:`#afbed1`}}>
+          <div className="page-container">
+            <Row className="no-gutters">
+              <Col className="d-flex flex-column">
+                <Link to="/">Buy Now</Link>
+                <Link to="/">About</Link>
+                <Link to="/">Contact</Link>
+              </Col>
+
+              <Col className="d-flex flex-column">
+                <Link to="/">Instagram</Link>
+                <Link to="/">Facebook</Link>
+
+              </Col>
+            </Row>
+            <Row className="no-gutters w-100 text-center">
+              <Col>
+                © {new Date().getFullYear()}, Pass It On Inc., Built by
+                  {` `}
+                <a href="https://connorjaksik.dev">Connor Jaksik</a></Col>
+            </Row>
+          </div>
         </footer>
       </div>
     </>

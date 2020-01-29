@@ -1,0 +1,1 @@
+// this is a category page that will only display products in this category

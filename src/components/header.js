@@ -27,6 +27,7 @@ function Header({ siteTitle }) {
         marginTop: count,
         position: `fixed`,
         zIndex: `10`,
+        width: `100%`
       }}
     >
       <div

@@ -1,0 +1,15 @@
+.page-container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 5px;
+}
+
+.main-quote {
+    background: #DBD8F0;
+    padding: 30px 0;
+}
+
+.add-button {
+    width: 100%;
+    margin: 10px 0
+}
